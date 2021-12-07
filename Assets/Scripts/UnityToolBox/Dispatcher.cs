@@ -6,7 +6,7 @@ using System.Threading;
 namespace UnityToolBox
 {
     /// <summary>
-    /// A system for dispatching code to execute on the main thread.
+    /// A system for dispatching code to execute on the main thread. 
     /// </summary>
     [AddComponentMenu("Dispatcher")]
     public class Dispatcher : MonoBehaviour

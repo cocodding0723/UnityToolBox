@@ -6,6 +6,6 @@ jobs:
     steps:
       - name: coco/docfx-action@master
         uses: nikeee/docfx-action@v1.0.0
-        width:
+        with:
           args: docfx_project/docfx.json
       

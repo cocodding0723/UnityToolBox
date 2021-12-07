@@ -4,6 +4,8 @@ jobs:
   API-Generate-Action:
     runs-on: ubuntu-latest
     steps:
-      - name: docfx-action
+      - name: coco/docfx-action@master
         uses: nikeee/docfx-action@v1.0.0
+        width:
+          args: docfx_project/docfx.json
       

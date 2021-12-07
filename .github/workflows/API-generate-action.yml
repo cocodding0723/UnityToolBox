@@ -12,6 +12,6 @@ jobs:
     - uses: maxheld83/ghpages@master
       name: Publish Documentation on GitHub Pages
       env:
-        BUILD_DIR: .
+        BUILD_DIR: public/
         GH_PAT: ${{ secrets.GH_PAT }} # See https://github.com/maxheld83/ghpages
       

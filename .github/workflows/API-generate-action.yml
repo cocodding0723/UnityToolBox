@@ -2,10 +2,11 @@ name: API Generate Action
 on: [push]
 jobs:
   API-Generate-Action:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
-      - name: coco/docfx-action@master
-        uses: nikeee/docfx-action@v1.0.0
-        with:
-          args: UnityToolBox/docfx_project/docfx.json
+    - uses: actions/checkout@v1
+    - uses: nikeee/docfx-action@master
+      name: Build Documentation
+      with:
+        args: docfx_project\docfx.json
       

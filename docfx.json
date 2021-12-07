@@ -6,8 +6,9 @@
           "files": [
             "src/**.csproj",
             "**/*.sln"
-          ]
-        }
+          ],
+          "src": ""
+        } 
       ],
       "dest": "api",
       "disableGitFeatures": false,

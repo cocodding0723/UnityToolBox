@@ -7,5 +7,5 @@ jobs:
       - name: coco/docfx-action@master
         uses: nikeee/docfx-action@v1.0.0
         with:
-          args: docfx_project/docfx.json
+          args: UnityToolBox/docfx_project/docfx.json
       

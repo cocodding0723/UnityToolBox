@@ -2,7 +2,7 @@ name: API Generate Action
 on: [push]
 jobs:
   API-Generate-Action:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
     - uses: nikeee/docfx-action@master

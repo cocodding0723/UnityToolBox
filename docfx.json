@@ -3,13 +3,13 @@
     {
       "src": [
         {
+          "src":"",
           "files": [
-            "src/**.csproj",
-            "**/*.sln"
+            "**.csproj",
+            "**.sln"
           ],
-          "exclude":["Library/"],
-          "src": ""
-        } 
+          "exclude":["Library/"]
+        }
       ],
       "dest": "api",
       "disableGitFeatures": false,

@@ -12,7 +12,7 @@ jobs:
     - uses: maxheld83/ghpages@master
       name: Publish Documentation on GitHub Pages
       env:
-        BUILD_DIR: _site # docfx's default output directory is _site
+        BUILD_DIR: .
         GH_PAT: ${{ secrets.GH_PAT }} # See https://github.com/maxheld83/ghpages
   deploy_ghpages:
     runs-on: ubuntu-18.04
@@ -21,6 +21,6 @@ jobs:
       - run: echo $GITHUB_SHA >> public/index.html
       - uses: maxheld83/ghpages@v0.3.0
         env:
-          BUILD_DIR: public/
+          BUILD_DIR: .
           GH_PAT: ${{ secrets.GH_PAT }}
       
